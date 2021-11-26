@@ -1,0 +1,243 @@
+html,
+body {
+  height: 100%;
+  font-family: "Times New Roman", Times, serif;
+
+  /* overflow-x: hidden;
+  overflow-y: hidden; */
+}
+
+* {
+  margin: 0;
+  padding: 0px;
+  font-weight: bold;
+}
+
+body {
+  background-color: #eeee;
+}
+canvas {
+  height: 52vw;
+  width: 50vw;
+}
+
+.title-container {
+  background-color: #150e56;
+  height: 52vw;
+  width: 50vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.frecuenciaActual-container,
+.frecuenciaAlta-container {
+  color: #8fd6e1;
+  width: 500vw;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.9rem;
+}
+h2 {
+  font-size: 1.9rem;
+}
+
+.wrapper-buttons {
+  display: flex;
+  height: 95%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.wrapper-buttons button {
+  font-size: 44px;
+  position: relative;
+  width: auto;
+  height: auto;
+  outline: none;
+}
+
+#frecuencias_manual {
+  background-color: #206a5d;
+  color: #ecf0f1;
+  text-decoration: none;
+  border-radius: 15px;
+  border: solid 1px #015001;
+  text-align: center;
+  padding: 16px 18px 14px;
+
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+
+  -webkit-box-shadow: 9px 9px 0px #094609;
+  -moz-box-shadow: 9px 9px 0px #094609;
+  box-shadow: 9px 9px 0px #094609;
+}
+#frecuencias_manual:active {
+  -webkit-box-shadow: 0px 2px 0px #094609;
+  -moz-box-shadow: 0px 2px 0px #094609;
+  box-shadow: 0px 2px 0px #094609;
+  position: relative;
+  top: 4px;
+}
+
+#frecuencias_voz {
+  background-color: #150e56;
+  color: #ecf0f1;
+  text-decoration: none;
+  border-radius: 15px;
+  border: solid 1px #150e56;
+  text-align: center;
+  padding: 16px 18px 14px;
+
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+
+  -webkit-box-shadow: 9px 9px 0px #0b4370;
+  -moz-box-shadow: 9px 9px 0px #0b4370;
+  box-shadow: 9px 9px 0px #0b4370;
+}
+#frecuencias_voz:active {
+  -webkit-box-shadow: 0px 2px 0px #0b4370;
+  -moz-box-shadow: 0px 2px 0px #0b4370;
+  box-shadow: 0px 2px 0px #0b4370;
+  position: relative;
+  top: 4px;
+}
+
+.interface {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 500px;
+}
+#iniciar {
+  outline: none;
+  text-decoration: none;
+  width: auto;
+  height: auto;
+
+  background-color: #206a5d;
+  color: #fff;
+  font-size: 2rem;
+  border: none;
+  margin: 40px;
+  border-radius: 15px;
+
+  padding: 16px 18px 14px;
+
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+
+  -webkit-box-shadow: 9px 9px 0px rgb(10, 56, 92);
+  -moz-box-shadow: 9px 9px 0px rgb(10, 56, 92);
+  box-shadow: 9px 9px 0px rgb(10, 56, 92);
+}
+
+#iniciar:active {
+  -webkit-box-shadow: 0px 2px 0px rgb(14, 76, 124);
+  -moz-box-shadow: 0px 2px 0px rgb(14, 76, 124);
+  box-shadow: 0px 2px 0px rgb(14, 76, 124);
+  position: relative;
+  top: 4px;
+}
+
+input[type="range"] {
+  display: block;
+  width: 70%;
+  margin: 25px;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"],
+input[type="range"]::-webkit-slider-runnable-track,
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  background-color: #206a5d;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #333;
+  border-radius: 50%;
+  margin-top: -9px;
+}
+
+input[type="range"]::-moz-range-thumb {
+  background-color: #777;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #333;
+  border-radius: 50%;
+}
+
+input[type="range"]::-ms-thumb {
+  background-color: #777;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #333;
+  border-radius: 50%;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #777;
+  height: 3px;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  outline: none;
+}
+
+input[type="range"]::-moz-range-track {
+  background-color: #777;
+  height: 3px;
+}
+
+input[type="range"]::-ms-track {
+  background-color: #777;
+  height: 3px;
+}
+
+input[type="range"]::-ms-fill-lower {
+  background-color: HotPink;
+}
+
+input[type="range"]::-ms-fill-upper {
+  background-color: black;
+}
+.show-Frequency {
+  background-color: #206a5d;
+  color: #fff;
+  margin-top: 10px;
+  padding: 30px;
+  font-size: 30px;
+  text-align: center;
+  height: auto;
+  width: 47vw;
+}
+
+.options {
+  text-align: center;
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerGeneral {
+  display: flex;
+  justify-content: center;
+}

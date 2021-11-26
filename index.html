@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="containerGeneral">
+      <div class="title-container">
+
+
+        <div class="frecuenciaAlta-container">
+          <h1>Frecuencia más alta registrada</h1>
+          <h2 id="frecuenciaAlta">HZ</h2>
+        </div>
+
+        <div class="frecuenciaActual-container">
+          <h1>Frecuencia actual</h1>
+          <h2 id="frecuenciaActual">HZ</h2>
+        </div>
+
+
+        
+      </div>
+      <div class="interface">
+        <div class="options">
+          <button id="iniciar">Iniciar frecuencia</button>
+          <input type="range" value= "0" id="range" min="0" max="20000" />
+          <div class="show-Frequency"></div>
+        </div>
+      </div>
+      <canvas></canvas>
+    </div>
+    <div class="wrapper-buttons">
+      <button id="frecuencias_manual">Frecuencias manuales</button>
+      <button id="frecuencias_voz">Frecuencias por voz</button>
+    </div>
+    <script src="prueba.js"></script>
+  </body>
+
+</html>
